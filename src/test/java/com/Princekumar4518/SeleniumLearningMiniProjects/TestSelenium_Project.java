@@ -1,4 +1,4 @@
-package com.Princekumar4518.Selenum_Basics;
+package com.Princekumar4518.SeleniumLearningMiniProjects;
 
 import com.Princekumar4518.CommonFunctions;
 import io.qameta.allure.Description;
