@@ -38,7 +38,7 @@ public class LearningLocatorsMiniProject03 {
         partialbuttontext.click();
 
 
-        WebElement errorMessage=driver.findElement(By.className("invalid-reason"));
+        WebElement errorMessage=driver.findElement(By.className("invalid-reasongi"));
        errorMessage.getText();
 
         Assert.assertEquals(errorMessage.getText(),"The email address you entered is incorrect.");
