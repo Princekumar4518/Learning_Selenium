@@ -40,6 +40,7 @@ public class findLocatorsProject {
 
 
 // Getting error messsage
+
         WebElement errorMessage=driver.findElement(By.id("js-notification-box-msg"));
         System.out.println(errorMessage.getText());
 
