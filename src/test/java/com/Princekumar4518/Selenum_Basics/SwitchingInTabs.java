@@ -19,29 +19,49 @@ public class SwitchingInTabs {
         driver.manage().window().maximize();
 
 
+
+        String title=driver.getTitle();
+        String windowid=driver.getWindowHandle();
+        System.out.println("Window ID "+windowid+ "Page Title" +title);
+
         WebElement applepage= wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath(" //a[@id='apple']"))));
         applepage.click();
-        String title=driver.getTitle();
-        System.out.println(title);
-        Boolean res=driver.getWindowHandle().contains(title);
-        System.out.println("Result "+res);
-       Set<String> windowId= driver.getWindowHandles();
-       for(String IDs:windowId){
-//           String title=driver.getTitle();
+
+        String title1=driver.getTitle();
+        String windowid1=driver.getWindowHandle();
+        System.out.println("Window ID "+windowid1+ "Page Title" +title1);
 
 
-//           System.out.println(IDs);
-//           System.out.println(driver.switchTo().window(IDs));
 
-           if(title.equals("Automation Testing Practice")){
-               System.out.println("Parent Window and their id = "+IDs);
-               System.out.println(driver.getCurrentUrl());
-           }
-           else{
-//               driver.switchTo().window(IDs);
-               System.out.println("Child Window and their id = "+IDs);
-           }
-       }
+
+
+
+
+
+
+
+
+//        String title=driver.getTitle();
+//        System.out.println(title);
+//        Boolean res=driver.getWindowHandle().contains(title);
+//        System.out.println("Result "+res);
+//       Set<String> windowId= driver.getWindowHandles();
+//       for(String IDs:windowId){
+////           String title=driver.getTitle();
+//
+//
+////           System.out.println(IDs);
+////           System.out.println(driver.switchTo().window(IDs));
+//
+//           if(title.equals("Automation Testing Practice")){
+//               System.out.println("Parent Window and their id = "+IDs);
+//               System.out.println(driver.getCurrentUrl());
+//           }
+//           else{
+////               driver.switchTo().window(IDs);
+//               System.out.println("Child Window and their id = "+IDs);
+//           }
+//       }
 
       driver.quit();
 
